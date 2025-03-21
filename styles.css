@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif, Tahoma;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.hidden {
+    display: none;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* button{
+	padding: 10px 10px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+	border-radius: 8px;
+} */
+
+label {
+    font-size: 16px;
+    cursor: pointer;
+}
+.khungkhung{
+    width: 100%;
+    max-width: 720px;
+    margin: 0px auto;
+    /* z-index: 1000; */
+}
+/* #top1{
+    position: fixed;
+    left: 50%;
+    max-width: 640px;
+    height: 165px;
+    border: solid 1px red;
+    display: inline-block;
+    z-index: 1000;
+} */
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 720px;
+    z-index: 999;
+    /* max-width: 640px; */
+    /* margin: 0px auto; */
+    background-color: #f8f8f8;
+    
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 720px;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border-top: 1px solid #ddd;
+    z-index: 999;
+}
+
+.fixed-footer button{
+    margin-left: 5px;
+}
+
+#scanPanel{
+	width: 100%; 
+	max-height: 300px;
+	/* max-width: 720px;  */
+    display: inline-block;
+	margin: 1px auto;
+}
+#scanPanel button{
+    float: left;
+    margin: 2px 10px;
+}
+
+/* #scanner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#scanner {
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#scanner-container video{
+    width: 100%;
+    height: 100%;
+} */
+
+#popupScanning {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(192, 190, 190, 0.7);
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#closePopupScanner{
+    width: 100%;
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+#user_type{
+    width:100%; 
+    /* max-width: 720px; */
+    padding-top: 7px;
+    margin: 1px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#user_type div{
+    width: 100%;
+    display: inline-block;
+}
+
+#manualInput, #quantityInput, #expiration-date{
+    padding: 10px;
+    font-size: 16px;
+    width: 160px;
+    float: left;
+    margin-right: 5px;
+}
+
+/* #quantityInput, #expiration-date{
+    width: 100px;
+} */
+
+/* #quantityInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    float: left;
+    margin-right: 5px;
+} */
+
+/* #expiration-date{
+    padding: 9px;
+    font-size: 14px;
+    width: 100px;
+    float: left;
+} */
+
+#addManual{
+    float: left;
+    margin-left: 10px;
+}
+
+#startScan{
+	/* display:block; */
+    background-color: #28a745;
+    color: white;
+    font-family: Tahoma;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+#FileName{
+    font-size: 16px;
+    padding: 7px;
+    width: 80px;
+    float: left;
+    margin-top: 2px;
+}
+
+
+#centerpage {
+    width: 100%;
+    max-width: 720px;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+#barcode-list {
+    width: 100%;
+    max-width: 720px;
+    margin: 5px auto;
+    border-collapse: collapse;
+}
+
+#barcode-list th, #barcode-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#barcode-list th {
+    background-color: #f5f5f5;
+}
+
+#barcode-table-body{
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#barcode-table-body tr:hover{
+    background-color: lightgrey;
+}
+
+#barcode-list td button {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+/*#barcode-list td button.edit {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+*/
+#barcode-table-body tr button.delete 
+{
+    padding: 10px 20px;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+}
+
+.clearList{
+    background-color: #f44336;
+}
+
+
+button{
+	padding: 10px 10px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+	border-radius: 8px;
+}

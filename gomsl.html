@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gom Số Lượng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="khungkhung">
+		<header class="fixed-header">
+			<div id="popupScanning" class="popup hidden">
+				<video id="video" width="320" height="200" autoplay unmuted playsinline></video>
+				<br>
+				<button id="closePopupScanner">Đóng</button>
+			</div>
+			<div id="scanPanel">
+				<button id="startScan">Quét</button>
+				<input type="text" id="FileName" placeholder="Tên File" onClick="this.select();" >
+				<button id="Save-to-List-btn">Lưu-tiếp tục</button>
+			    <button id="Exp-List-btn">Xuất Files</button>
+			</div>
+	
+			<div id="user_type">
+				<div>
+					<input type="number" id="manualInput" placeholder="Nhập mã hàng" onClick="this.select();" >
+					<input type="number" id="quantityInput" placeholder="Số lượng" step="any" min="0" onClick="this.select();" >
+					<input type="text" id="expiration-date" placeholder="Hạn dùng" onClick="this.select();" >
+				</div>
+	
+				<div>
+					<label style="margin-top: 2px; padding: 5px; float: left;">
+						<input type="checkbox" id="checkDuplicates" checked> Lọc Trùng Mã
+					</label>
+					<button id="addManual">Thêm xuống lưới</button>
+				</div>
+			</div>
+		</header>
+	
+		<div id="centerpage">
+			<table id="barcode-list">
+				<thead>
+					<tr>
+						<th>STT</th>
+						<th>Mã hàng</th>
+						<th>Số lượng</th>
+					</tr>
+				</thead>
+				<tbody id="barcode-table-body"></tbody>
+			</table>
+		</div>
+	
+		<footer class="fixed-footer">
+			<button id="downloadList">Tải về (sku.txt)</button>
+			<button id="download-xlsx-btn">Tải về (sku.xlsx)</button>
+			<!-- <button id="share-txt-btn">Chia sẻ</button> -->
+			<button class="clearList" id="clearList">Xóa danh sách</button>
+		</footer>
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/quagga@0.12.1/dist/quagga.min.js"></script>
+	<!-- <script src="/lib/quagga.min.js" id="quagga-offline" onerror="loadQuaggaOnline()"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <!-- <script src="script_040325.js"></script> -->
+	<script src="script.js"></script>
+</body>
+</html>
